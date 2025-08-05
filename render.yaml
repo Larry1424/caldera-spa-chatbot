@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: caldera-spa-chat
+    runtime: python
+    buildCommand: ""
+    startCommand: python app_caldera.py
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
